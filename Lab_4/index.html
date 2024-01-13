@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app">
+        <h1>{{title}}</h1>
+        <h3><a v-bind:href="lien">{{linkTitle}}</a></h3>
+        <h3><a :href="lien">{{linkTitle}}</a></h3>
+
+        <div><img :src="image" width="300" height="300" :alt="imageTitle"></img></div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
