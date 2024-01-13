@@ -10,7 +10,12 @@
     
     <div id="app">
         <h1>{{title}}</h1>
-        <h3>{{message}}</h1>
+        <h3>{{message}}</h3>
+        <h3>{{hello()}}</h3>
+        <h3>{{hello1()}}</h3>
+        <p>la surface d'un carre de 5 metres de cote est {{ calculeCarreSurface(5) }} m2</p>
+
+        <p>la surface d'un rectangle de {{width}} de longeur et {{hight}} de hauteur est {{ calculeRectangleSurface() }} m2</p>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
