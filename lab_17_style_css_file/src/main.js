@@ -6,4 +6,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 import 'bootstrap/dist/js/bootstrap.js'
 
+import './assets/style.css'
+
 createApp(App).mount('#app')
