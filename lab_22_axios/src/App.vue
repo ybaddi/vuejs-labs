@@ -1,6 +1,9 @@
 <template>
   <div class="container" id="app">
-    
+    <h1>{{ title.toUpperCase() }}</h1>
+    <p>{{ body }}</p>
+    <p>Post ID : {{ id  }}</p>
+    <p>User: {{ userId }}</p>
   </div>
 </template>
 
@@ -12,7 +15,7 @@ export default {
   name: 'App',
   data(){
     return {
-      apiUrl : 'https://jsonplaceholder.typicode.com/todos/1',
+      apiUrl : 'https://jsonplaceholder.typicode.com/posts/2',
       id: '',
       title: '',
       body: '',
@@ -24,6 +27,10 @@ export default {
     .get(this.apiUrl)
     .then(res => {
       console.log(res);
+      this.title=res.data.title;
+      this.id=res.data.id   ;
+      this.body=res.data.body;
+      this.userId=res.data.userId;
     })
   }
 }
